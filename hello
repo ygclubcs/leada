@@ -1,0 +1,63 @@
+#! /usr/bin/env bash
+
+CLR_NOR="\x1b[0m"  # back to NORMAL
+CLR_BOLD="\x1b[1m" # BOLD text
+CLR_RED="\x1b[31m" # RED text
+CLR_GRN="\x1b[32m" # GREEN text
+CLR_YLW="\x1b[33m" # YELLOW text
+
+export GAIA_HOME=`pwd`
+export GAIA_LOG=`pwd`/log
+if [ -z "$GAIA_ENV" ]; then export GAIA_ENV="dev"; fi
+
+echo -e "${CLR_YLW}Checking Pyhton version......${CLR_NOR}"
+PYV=`python -c "import sys;t='{v[0]}_{v[1]}'.format(v=list(sys.version_info[:2]));sys.stdout.write(t)";`
+if [[ $PYV == 2_7 ]]
+then
+	alias PY=python;
+	alias PIP=pip;
+fi
+if [[ $PYV == 3* ]]
+then
+	alias PY=python2.7;
+	alias PIP=pip2.7;
+fi
+if (PY -V); then
+	echo -e "${CLR_YLW}Pyhton version checked......${CLR_NOR}${CLR_GRN}OK${CLR_NOR}"
+else
+	echo -e "${CLR_YLW}Pyhton version checked......${CLR_NOR}${CLR_RED}Failed${CLR_NOR}"
+	exit -1
+fi
+
+echo -e "${CLR_YLW}Setting Pyhton path to user local......${CLR_NOR}${CLR_GRN}Done${CLR_NOR}"
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$GAIA_HOME/.py/lib/python2.7/site-packages/:$GAIA_HOME/lib/src:$GAIA_HOME/src:$GAIA_HOME/test
+
+if (PY -c "import virtualenv as venv"); then
+	echo -e "${CLR_YLW}Checking virtualenv......${CLR_NOR}${CLR_GRN}OK${CLR_NOR}"
+else
+	echo -e "${CLR_YLW}Checking virtualenv......${CLR_NOR}${CLR_RED}Failed${CLR_NOR}"
+	echo -e "${CLR_YLW}Reinstalling virtualenv......${CLR_NOR}"
+	PIP uninstall virtualenv
+	PIP install virtualenv
+	echo -e "${CLR_YLW}Reinstalling virtualenv......${CLR_NOR}${CLR_GRN}Done${CLR_NOR}"
+fi
+
+if (PY bin/env.py); then
+
+	source .py/bin/activate
+
+	echo -e "${CLR_YLW}Installing dependencies......${CLR_NOR}"
+	PIP install -r requirements/${GAIA_ENV}.txt
+	echo -e "${CLR_YLW}Installing dependencies......${CLR_NOR}${CLR_GRN}OK${CLR_NOR}"
+	if [[ $GAIA_ENV ]]
+	then
+		echo -e "${CLR_YLW}Current environment: ${CLR_NOR}${CLR_RED}$GAIA_ENV${CLR_NOR}"
+	else
+		export GAIA_ENV="dev"
+		echo -e "${CLR_YLW}Current environment: ${CLR_NOR}${CLR_RED}$GAIA_ENV${CLR_NOR}"
+	fi
+
+	export PATH="$PATH:${GAIA_HOME}/bin/"
+fi
+
+

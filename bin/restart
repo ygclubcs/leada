@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+if [ -z "$GAIA_ENV" ]; then export GAIA_ENV="dev"; fi
+
+export UWSGI_SET_PH=gaia_home=$GAIA_HOME
+export UWSGI_PYTHONPATH=$PYTHONPATH
+
+ORG=`pwd`
+CUR="${BASH_SOURCE[0]}";
+if([ -h "${CUR}" ]) then
+  while([ -h "${CUR}" ]) do CUR=`readlink "${CUR}"`; done
+fi
+pushd . > /dev/null
+cd `dirname ${CUR}` > /dev/null
+CUR=`pwd`;
+popd  > /dev/null
+
+cd $CUR/..
+
+kill -INT `cat log/empr.pid`
+
+uwsgi --listen 1024 --emperor=conf/${GAIA_ENV}/vassals --pidfile log/empr.pid --daemonize log/empr.log > log/out.log 2>&1
+

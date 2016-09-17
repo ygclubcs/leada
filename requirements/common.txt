@@ -1,0 +1,11 @@
+nose
+semver
+PyYAML
+pyCLI
+
+uwsgi
+Flask
+redis
+requests
+pymongo
+-e git+git@github.com:caiyunapp/caiyun-common.git@v0.2.5#egg=caiyun

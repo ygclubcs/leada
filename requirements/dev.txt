@@ -1,0 +1,6 @@
+-r common.txt
+
+ipython
+coverage
+pylint
+profilehooks

@@ -1,0 +1,36 @@
+2015-10-16 17:24:18,948 ERROR: Unkonwn error: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+2015-10-16 17:24:18,948 ERROR: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+Traceback (most recent call last):
+  File "/var/www/billing.caiyunapp.com/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/var/www/billing.caiyunapp.com/src/api/main.py", line 64, in getcredit
+    if rc.exists(balance_key) == False:
+  File "/var/www/billing.caiyunapp.com/.py/lib/python2.7/site-packages/redis/client.py", line 838, in exists
+    return self.execute_command('EXISTS', name)
+  File "/var/www/billing.caiyunapp.com/.py/lib/python2.7/site-packages/redis/client.py", line 570, in execute_command
+    connection.send_command(*args)
+  File "/var/www/billing.caiyunapp.com/.py/lib/python2.7/site-packages/redis/connection.py", line 556, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/var/www/billing.caiyunapp.com/.py/lib/python2.7/site-packages/redis/connection.py", line 532, in send_packed_command
+    self.connect()
+  File "/var/www/billing.caiyunapp.com/.py/lib/python2.7/site-packages/redis/connection.py", line 436, in connect
+    raise ConnectionError(self._error_message(e))
+ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+2015-10-16 17:24:31,521 ERROR: Unkonwn error: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+2015-10-16 17:24:31,521 ERROR: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+Traceback (most recent call last):
+  File "/var/www/billing.caiyunapp.com/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/var/www/billing.caiyunapp.com/src/api/main.py", line 39, in countdown
+    if rc.exists(balance_key) == False:
+  File "/var/www/billing.caiyunapp.com/.py/lib/python2.7/site-packages/redis/client.py", line 838, in exists
+    return self.execute_command('EXISTS', name)
+  File "/var/www/billing.caiyunapp.com/.py/lib/python2.7/site-packages/redis/client.py", line 570, in execute_command
+    connection.send_command(*args)
+  File "/var/www/billing.caiyunapp.com/.py/lib/python2.7/site-packages/redis/connection.py", line 556, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/var/www/billing.caiyunapp.com/.py/lib/python2.7/site-packages/redis/connection.py", line 532, in send_packed_command
+    self.connect()
+  File "/var/www/billing.caiyunapp.com/.py/lib/python2.7/site-packages/redis/connection.py", line 436, in connect
+    raise ConnectionError(self._error_message(e))
+ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.

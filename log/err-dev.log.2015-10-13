@@ -1,0 +1,28 @@
+2015-10-13 01:25:59,827 ERROR: Unkonwn error: Command # 1 (INCRBY TAkhjf8d1nlSlspN:count 1) of pipeline caused error: value is not an integer or out of range
+2015-10-13 01:25:59,827 ERROR: Command # 1 (INCRBY TAkhjf8d1nlSlspN:count 1) of pipeline caused error: value is not an integer or out of range
+Traceback (most recent call last):
+  File "/var/www/billing.caiyunapp.com/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/var/www/billing.caiyunapp.com/src/api/main.py", line 48, in countdown
+    pipe.incr(count_key).decr(balance_key).execute()
+  File "/var/www/billing.caiyunapp.com/.py/lib/python2.7/site-packages/redis/client.py", line 2578, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/var/www/billing.caiyunapp.com/.py/lib/python2.7/site-packages/redis/client.py", line 2492, in _execute_transaction
+    self.raise_first_error(commands, response)
+  File "/var/www/billing.caiyunapp.com/.py/lib/python2.7/site-packages/redis/client.py", line 2526, in raise_first_error
+    raise r
+ResponseError: Command # 1 (INCRBY TAkhjf8d1nlSlspN:count 1) of pipeline caused error: value is not an integer or out of range
+2015-10-13 01:41:51,398 ERROR: Unkonwn error: Command # 1 (INCRBY TAkhjf8d1nlSlspN:count 1) of pipeline caused error: value is not an integer or out of range
+2015-10-13 01:41:51,398 ERROR: Command # 1 (INCRBY TAkhjf8d1nlSlspN:count 1) of pipeline caused error: value is not an integer or out of range
+Traceback (most recent call last):
+  File "/var/www/billing.caiyunapp.com/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/var/www/billing.caiyunapp.com/src/api/main.py", line 48, in countdown
+    pipe.incr(count_key).decr(balance_key).execute()
+  File "/var/www/billing.caiyunapp.com/.py/lib/python2.7/site-packages/redis/client.py", line 2578, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/var/www/billing.caiyunapp.com/.py/lib/python2.7/site-packages/redis/client.py", line 2492, in _execute_transaction
+    self.raise_first_error(commands, response)
+  File "/var/www/billing.caiyunapp.com/.py/lib/python2.7/site-packages/redis/client.py", line 2526, in raise_first_error
+    raise r
+ResponseError: Command # 1 (INCRBY TAkhjf8d1nlSlspN:count 1) of pipeline caused error: value is not an integer or out of range

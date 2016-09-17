@@ -1,0 +1,334 @@
+2016-05-28 11:12:56,120 ERROR: Unkonwn error: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Database' object it is failing because no such method exists.
+2016-05-28 11:12:56,121 ERROR: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Database' object it is failing because no such method exists.
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 34, in regist
+    db.insert({"id":uid,"name":name,"credit":100,"islogin":0})
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/collection.py", line 2349, in __call__
+    self.__name)
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Database' object it is failing because no such method exists.
+2016-05-28 11:15:13,149 ERROR: Unkonwn error: No servers found yet
+2016-05-28 11:15:13,150 ERROR: No servers found yet
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 34, in regist
+    db.student.insert({"id":uid,"name":name,"credit":100,"islogin":0})
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/collection.py", line 2203, in insert
+    with self._socket_for_writes() as sock_info:
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/mongo_client.py", line 716, in _get_socket
+    server = self._get_topology().select_server(selector)
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/topology.py", line 142, in select_server
+    address))
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/topology.py", line 118, in select_servers
+    self._error_message(selector))
+ServerSelectionTimeoutError: No servers found yet
+2016-05-28 11:15:43,227 ERROR: Unkonwn error: No servers found yet
+2016-05-28 11:15:43,228 ERROR: No servers found yet
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 34, in regist
+    db.student.insert({"id":uid,"name":name,"credit":100,"islogin":0})
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/collection.py", line 2203, in insert
+    with self._socket_for_writes() as sock_info:
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/mongo_client.py", line 716, in _get_socket
+    server = self._get_topology().select_server(selector)
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/topology.py", line 142, in select_server
+    address))
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/topology.py", line 118, in select_servers
+    self._error_message(selector))
+ServerSelectionTimeoutError: No servers found yet
+2016-05-28 11:18:04,966 ERROR: Unkonwn error: No servers found yet
+2016-05-28 11:18:04,969 ERROR: No servers found yet
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 35, in regist
+    student.insert({"id":uid,"name":name,"credit":100,"islogin":0})
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/collection.py", line 2203, in insert
+    with self._socket_for_writes() as sock_info:
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/mongo_client.py", line 716, in _get_socket
+    server = self._get_topology().select_server(selector)
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/topology.py", line 142, in select_server
+    address))
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/topology.py", line 118, in select_servers
+    self._error_message(selector))
+ServerSelectionTimeoutError: No servers found yet
+2016-05-28 11:28:43,627 ERROR: Unkonwn error: No servers found yet
+2016-05-28 11:28:43,629 ERROR: No servers found yet
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 35, in regist
+    student.insert({"id":uid,"name":name,"credit":100,"islogin":0})
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/collection.py", line 2203, in insert
+    with self._socket_for_writes() as sock_info:
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/mongo_client.py", line 716, in _get_socket
+    server = self._get_topology().select_server(selector)
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/topology.py", line 142, in select_server
+    address))
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/topology.py", line 118, in select_servers
+    self._error_message(selector))
+ServerSelectionTimeoutError: No servers found yet
+2016-05-28 11:39:26,631 ERROR: Unkonwn error: No servers found yet
+2016-05-28 11:39:26,633 ERROR: No servers found yet
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 34, in regist
+    student.insert({"id":uid,"name":name,"credit":100,"islogin":0})
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/collection.py", line 2203, in insert
+    with self._socket_for_writes() as sock_info:
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/mongo_client.py", line 716, in _get_socket
+    server = self._get_topology().select_server(selector)
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/topology.py", line 142, in select_server
+    address))
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/topology.py", line 118, in select_servers
+    self._error_message(selector))
+ServerSelectionTimeoutError: No servers found yet
+2016-05-28 11:43:54,131 ERROR: Unkonwn error: global name 'mongo_client' is not defined
+2016-05-28 11:43:54,131 ERROR: global name 'mongo_client' is not defined
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 32, in regist
+    db = mongo_client.match
+NameError: global name 'mongo_client' is not defined
+2016-05-28 13:12:42,395 ERROR: Unkonwn error: global name 'gen_setd_testpaper' is not defined
+2016-05-28 13:12:42,398 ERROR: global name 'gen_setd_testpaper' is not defined
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 58, in gen_papers
+    gen_setd_testpaper(x["id"])
+NameError: global name 'gen_setd_testpaper' is not defined
+2016-05-28 13:15:31,387 ERROR: Unkonwn error: global name 'logger' is not defined
+2016-05-28 13:15:31,388 ERROR: global name 'logger' is not defined
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 58, in gen_papers
+    logger.debug("test")
+NameError: global name 'logger' is not defined
+2016-05-28 13:45:36,225 ERROR: Unkonwn error: 'uchoice'
+2016-05-28 13:45:36,228 ERROR: 'uchoice'
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 72, in get_paper
+    paper = {"pid":x["_id"],"content":x["content"],"answer":x["answer"],"choice":x["choice"],"uname":x["name"],"uchoice":x["uchoice"],"score":x["score"],"scored":x["scored"]}
+KeyError: 'uchoice'
+2016-05-28 13:47:16,256 ERROR: Unkonwn error: 'uchoice'
+2016-05-28 13:47:16,257 ERROR: 'uchoice'
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 72, in get_paper
+    paper = {"pid":x["_id"],"content":x["content"],"answer":x["answer"],"choice":x["choice"],"uname":x["name"],"uchoice":x["uchoice"],"score":x["score"],"scored":x["scored"]}
+KeyError: 'uchoice'
+2016-05-28 13:49:54,450 ERROR: Unkonwn error: global name 'json_util' is not defined
+2016-05-28 13:49:54,451 ERROR: global name 'json_util' is not defined
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 74, in get_paper
+    jsondoc = json.dumps(paper,default=json_util.default)
+NameError: global name 'json_util' is not defined
+2016-05-28 14:15:21,224 ERROR: Unkonwn error: global name 'ObjectId' is not defined
+2016-05-28 14:15:21,225 ERROR: global name 'ObjectId' is not defined
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 86, in answer_paper
+    testpaper.update({"_id":ObjectId(topic_id)},{"$set":{"uchoice":uchoice,"scored":scored}})
+NameError: global name 'ObjectId' is not defined
+2016-05-28 15:28:50,131 ERROR: Unkonwn error: global name 'topic' is not defined
+2016-05-28 15:28:50,132 ERROR: global name 'topic' is not defined
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 64, in gen_papers
+    public_topics = topic.find({"ismust":0})
+NameError: global name 'topic' is not defined
+2016-05-28 15:29:24,859 ERROR: Unkonwn error: global name 'y' is not defined
+2016-05-28 15:29:24,860 ERROR: global name 'y' is not defined
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 67, in gen_papers
+    testpaper.insert({"content":y["content"],"choice":y["choice"],"answer":y["answer"],"score":y["score"],"ismust":y["ismust"],"uid":"public","name":"public","uchoice":"0","scored":-1})
+NameError: global name 'y' is not defined
+2016-05-28 15:42:45,778 ERROR: Unkonwn error: if no direction is specified, key_or_list must be an instance of list
+2016-05-28 15:42:45,779 ERROR: if no direction is specified, key_or_list must be an instance of list
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 118, in get_stdlist
+    stds = student.find().sort({"credit":-1})
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/cursor.py", line 657, in sort
+    keys = helpers._index_list(key_or_list, direction)
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/helpers.py", line 57, in _index_list
+    raise TypeError("if no direction is specified, "
+TypeError: if no direction is specified, key_or_list must be an instance of list
+2016-05-28 15:45:54,108 ERROR: Unkonwn error: 'credit'
+2016-05-28 15:45:54,109 ERROR: 'credit'
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 121, in get_stdlist
+    item = {"id":x["id"],"name":x["name"],"credit":x["credit"]}
+KeyError: 'credit'
+2016-05-28 15:46:37,997 ERROR: Unkonwn error: 'credits'
+2016-05-28 15:46:37,998 ERROR: 'credits'
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 121, in get_stdlist
+    item = {"id":x["id"],"name":x["name"],"credits":x["credits"]}
+KeyError: 'credits'
+2016-05-28 15:47:57,658 ERROR: Unkonwn error: 'credits'
+2016-05-28 15:47:57,658 ERROR: 'credits'
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 121, in get_stdlist
+    item = {"id":x["id"],"name":x["name"],"credits":x["credits"]}
+KeyError: 'credits'
+2016-05-28 15:58:55,340 ERROR: Unkonwn error: 'gbk' codec can't decode byte 0xb3 in position 8: incomplete multibyte sequence
+2016-05-28 15:58:55,343 ERROR: 'gbk' codec can't decode byte 0xb3 in position 8: incomplete multibyte sequence
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 122, in get_stdlist
+    x["name"] = x["name"].decode("GBK")
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xb3 in position 8: incomplete multibyte sequence
+2016-05-28 23:01:03,851 ERROR: Unkonwn error: u'test' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+2016-05-28 23:01:03,858 ERROR: u'test' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 100, in lock_topic
+    topic = testpaper.find({"_id":ObjectId(topic_id)})
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'test' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+2016-05-28 23:58:59,221 ERROR: Unkonwn error: global name 'paper' is not defined
+2016-05-28 23:58:59,223 ERROR: global name 'paper' is not defined
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 82, in get_testpaper_topic
+    jsondoc = json.dumps(paper,default=json_util.default)
+NameError: global name 'paper' is not defined
+2016-05-29 00:00:01,506 ERROR: Unkonwn error: global name 'jsondodc' is not defined
+2016-05-29 00:00:01,507 ERROR: global name 'jsondodc' is not defined
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 84, in get_testpaper_topic
+    result.append(jsondodc)
+NameError: global name 'jsondodc' is not defined
+2016-05-29 00:00:02,706 ERROR: Unkonwn error: global name 'jsondodc' is not defined
+2016-05-29 00:00:02,708 ERROR: global name 'jsondodc' is not defined
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 84, in get_testpaper_topic
+    result.append(jsondodc)
+NameError: global name 'jsondodc' is not defined
+2016-05-29 06:21:30,798 ERROR: Unkonwn error: 'score'
+2016-05-29 06:21:30,801 ERROR: 'score'
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 82, in get_testpaper_topic
+    myscore = s["score"]
+KeyError: 'score'
+2016-05-29 07:01:16,069 ERROR: Unkonwn error: Cannot encode object: set(['credit', 2])
+2016-05-29 07:01:16,071 ERROR: Cannot encode object: set(['credit', 2])
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 117, in answer_paper
+    student.update({"id":uid},{"$inc":{"credit",scored}})
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/collection.py", line 2237, in update
+    check_keys, multi, manipulate, write_concern)
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/collection.py", line 709, in _update
+    codec_options=self.codec_options).copy()
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/pool.py", line 218, in command
+    self._raise_connection_failure(error)
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/pool.py", line 346, in _raise_connection_failure
+    raise error
+InvalidDocument: Cannot encode object: set(['credit', 2])
+2016-05-29 07:25:01,532 ERROR: Unkonwn error: cannot set options after executing query
+2016-05-29 07:25:01,535 ERROR: cannot set options after executing query
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 163, in isstart
+    if res["isstart"] == 1:
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/cursor.py", line 531, in __getitem__
+    self.__check_okay_to_chain()
+  File "/Users/squirrelRao/Desktop/billing-master/.py/lib/python2.7/site-packages/pymongo/cursor.py", line 342, in __check_okay_to_chain
+    raise InvalidOperation("cannot set options after executing query")
+InvalidOperation: cannot set options after executing query
+2016-05-29 08:31:37,277 ERROR: Unkonwn error: 'index'
+2016-05-29 08:31:37,280 ERROR: 'index'
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 188, in istopicstart
+    return {"index":x["index"],"isstart":x["isstart"]}
+KeyError: 'index'
+2016-05-29 08:32:22,320 ERROR: Unkonwn error: global name 'istopicstat' is not defined
+2016-05-29 08:32:22,320 ERROR: global name 'istopicstat' is not defined
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 179, in wait_start
+    istopicstat.update({"$set":{"index":index,"isstart":0}})
+NameError: global name 'istopicstat' is not defined
+2016-05-29 08:33:35,881 ERROR: Unkonwn error: update() takes at least 3 arguments (2 given)
+2016-05-29 08:33:35,882 ERROR: update() takes at least 3 arguments (2 given)
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 179, in wait_start
+    istopicstart.update({"$set":{"index":index,"isstart":0}})
+TypeError: update() takes at least 3 arguments (2 given)
+2016-05-29 11:06:33,752 ERROR: Unkonwn error: 'content'
+2016-05-29 11:06:33,754 ERROR: 'content'
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 67, in gen_papers
+    gen_std_testpaper(x["id"])
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 204, in gen_std_testpaper
+    testpaper.insert({"index":i,"content":y["content"],"choice":y["choice"],"answer":y["answer"],"score":y["score"],"ismust":y["ismust"],"uid":uid,"name":x["name"],"uchoice":"0","scored":-1})
+KeyError: 'content'
+2016-05-29 11:07:11,739 ERROR: Unkonwn error: 'content'
+2016-05-29 11:07:11,740 ERROR: 'content'
+Traceback (most recent call last):
+  File "/Users/squirrelRao/Desktop/billing-master/.py/src/caiyun/caiyun/platform/wsgi.py", line 13, in decorated_function
+    value = func(*args, **kwargs)
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 67, in gen_papers
+    gen_std_testpaper(x["id"])
+  File "/Users/squirrelRao/Desktop/billing-master/src/api/main.py", line 204, in gen_std_testpaper
+    testpaper.insert({"index":i,"content":y["content"],"choice":y["choice"],"answer":y["answer"],"score":y["score"],"ismust":y["ismust"],"uid":uid,"name":x["name"],"uchoice":"0","scored":-1})
+KeyError: 'content'
